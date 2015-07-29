@@ -1,0 +1,64 @@
+[
+    {
+        "id": "P-00001",
+		"description": "location pattern of a group of users",
+		"actor": [
+			{"user": "Gray"},
+			{"user": "Amini"},
+			{"user": "Brown"}
+		],
+        "sequence": [
+            {
+                "location": "office-3-Lakeridge-Oshawa"
+            },
+            {
+                "location": "office-4-Lakeridge-Oshawa"
+            },
+            {
+                "location": "office-5-Lakeridge-Oshawa"
+            }
+        ],
+		"userSupport": "0.2",
+		"duration": "4"
+    },
+    {
+        "id": "P-00002",
+		"description": "location pattern of specific role",
+		"actor": [
+			{"role": "nurse"}
+		],
+        "sequence": [
+            {
+                "location": "office-2-McMaster-Hamilton"
+            },
+            {
+                "location": "office-1-McMaster-Hamilton"
+            },
+            {
+                "location": "office-3-McMaster-Hamilton"
+            }
+        ],
+		"groupSupport": "0.1",
+		"userSupport": "0.2"
+    },
+    {
+        "id": "P-00003",
+		"description": "physician's workflow",
+        "sequence": [
+            {
+                "action": "read exam",
+				"gap": "2"
+            },
+            {
+                "action": "read report",
+				"gap": "2"
+            },
+            {
+                "action": "update report"
+            }
+        ],
+		"groupSupport": "0.1",
+		"userSupport": "0.2",
+		"duration": "8"
+    }
+]
